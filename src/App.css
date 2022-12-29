@@ -5,37 +5,41 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.form input {
+  padding: 1rem;
+  border: 0;
+  border-bottom: 2px #efefef solid;
+  margin-bottom: 10px;
 }
 
 .card {
-  padding: 2em;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+  background: rgb(54, 54, 54);
 }
 
-.read-the-docs {
-  color: #888;
+.card-links {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.card-links li {
+  list-style: none;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.error {
+  color: palevioletred;
+  padding: 1rem;
+  background: #000;
+  border-radius: 10px;
 }
