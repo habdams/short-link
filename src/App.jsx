@@ -29,9 +29,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Link Shortener</h1>
+      <header className="header">
+        <h1>Short Link</h1>
+        <p>A URL shortener</p>
+      </header>
+
       <form onSubmit={handleSubmit} className="form">
-        <label htmlFor="link">URL 👇</label>
+        <label htmlFor="link">Paste URL Here 👇</label>
         <input type="text" name="link" id="link" placeholder="Input the URL" />
         <button type="submit">Shorten</button>
       </form>
